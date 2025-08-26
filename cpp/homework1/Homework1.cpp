@@ -23,9 +23,9 @@ int main() {
     int product = userInput * secondInput; /* Calculate the product */
 
     //Printing Statments
-    std::cout << "The sum of these two numbers is: " << sum << std::endl; 
-    std::cout << "The difference of these two numbers is: " << difference << std::endl;
-    std::cout << "The product of these two numbers is: " << product << std::endl;
+    std::cout << "The sum of these two numbers is: " << sum <<  "." << std::endl; 
+    std::cout << "The difference of these two numbers is: " << difference << "." << std::endl;
+    std::cout << "The product of these two numbers is: " << product << "." << std::endl;
 
     return 0;
 }
