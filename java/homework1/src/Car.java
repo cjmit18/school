@@ -1,5 +1,4 @@
-package edu.jjc.summer2025.week1.homework;/*
-
+/*
  * Name: Wayne Mitchell
  * Course Number: 261
  * Program: 1

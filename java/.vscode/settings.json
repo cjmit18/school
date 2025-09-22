@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "homework1/src",
+        "Homework2",
+        "rps/rockpaperscissors"
+    ]
+}
