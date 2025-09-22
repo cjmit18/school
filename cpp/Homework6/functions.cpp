@@ -1,14 +1,13 @@
 #include <iostream>
+#include <iomanip>
 #include "average.h"
-
-float computeAverage(int a, int b);
-float computeAverage(int a, int b, int c);
-float computeAverage(float a, float b);
-float computeAverage(float a, float b, float c);
 
 int main() {
     
     Average avg;
+
+    std::cout << std::fixed << std::setprecision(2);
+    
     std::cout << "Enter 2 integers separated by space on a single line: ";
     int x, y;
     std::cin >> x >> y;
