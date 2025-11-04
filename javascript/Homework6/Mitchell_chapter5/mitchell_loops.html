@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mitchell Chapter 5 - Loops</title>
+</head>
+<body onload="drawRhombus();">
+    <table align="center" width="70%">
+        <tr><td colspan="2">
+            <h1>The Rollover</h1>
+            <h3>To change the image, roll your mouse over it</h3>
+            <table align="center" width="70%">
+                <tr>
+                    <td align="center">
+                        <a href="#" onmouseover="document.photo.src='images.jpg';" onmouseout="document.photo.src='1887.jpg';">
+                            <img src="1887.jpg" alt="rollover example" name="photo" width="300" height="200" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td></tr>
+    </table>
+    
+    <h2>Part II: Rhombus Pattern (Loops)</h2>
+    <pre id="output" style="font-family: monospace;"></pre>
+    
+    <script>
+    // Draw a rhombus using nested loops with two symbols
+    function drawRhombus() {
+        var out = '';
+        var size = 7; // odd number for symmetry
+        var mid = (size - 1) / 2;
+        for (var i = 0; i < size; i++) {
+            var spaces = Math.abs(mid - i);
+            var chars = size - (2 * spaces);
+            var line = '';
+            for (var s = 0; s < spaces; s++) {
+                line += ' ';
+            }
+            for (var k = 0; k < chars; k++) {
+                // Alternate two simple symbols for interest
+                line += (k % 2 === 0) ? '#' : '+';
+            }
+            out += line + '\n';
+        }
+        document.getElementById('output').textContent = out;
+    }
+    </script>
+ </body>
+ </html>

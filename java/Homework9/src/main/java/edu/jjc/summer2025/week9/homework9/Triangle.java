@@ -1,5 +1,6 @@
+package edu.jjc.summer2025.week9.homework9;
 public class Triangle extends Shape {
-    private double base;
+private double base;
     private double height;
 
     public Triangle(double base, double height) {

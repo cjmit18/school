@@ -1,3 +1,4 @@
+package edu.jjc.summer2025.week9.homework9;
 public class Rectangle extends Shape {
     private double length;
     private double width;
