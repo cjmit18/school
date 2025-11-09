@@ -1,3 +1,10 @@
+/*Wayne Mitchell
+    Homework 12
+    Player.cpp
+    This program creates a Player class with job and level attributes. It then
+    instantiates three Player objects with varying levels of user input and default values. 
+    Finally, it displays the details of each player in a formatted manner.
+*/
 #include <iostream>
 #include <iomanip>
 #include <array>
