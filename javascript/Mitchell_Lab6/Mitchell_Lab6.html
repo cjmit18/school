@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIS 223 Chapter 6 Program</title>
+    <!--
+      Mitchell_Lab6.html
+      Purpose: Simple pizza ordering page that collects user choices (size, toppings, pickup/delivery),
+      shows a live-updating order summary with a running total, and asks for confirmation.
+      Behavior:
+        - Summary updates automatically as the user types/selects.
+        - Clicking "Confirm Your Order" shows a confirm() dialog and then redirects to Page 2 on OK,
+          or writes a cancellation message on Cancel.
+      Notes:
+        - Toppings are $1.50 each. Delivery adds $2; Pickup adds $0.
+    -->
+    <style>
+        /* Basic page and form styling for readability */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        #demo {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+            white-space: pre-line;
+        }
+        /* Order summary table borders */
+        table.order-summary{border-collapse:collapse;width:100%;}
+        table.order-summary th,table.order-summary td{border:1px solid #444;padding:6px;text-align:left}
+    </style>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+
+    <form id="pizzaForm">
+        <!-- Customer name (required) -->
+        <div class="section">
+            <label for="customerName"><strong>Name:</strong></label>
+            <input type="text" id="customerName" name="customerName" placeholder="First Last" required style="margin-left:10px;">
+        </div>
+        <!-- Size radio group (select exactly one) -->
+        <div class="section">
+            <p><strong>Please choose your size of pizza:</strong></p>
+            <input type="radio" name="size" value="Small" data-price="8" required> Small $8.00<br>
+            <input type="radio" name="size" value="Medium" data-price="10"> Medium $10.00<br>
+            <input type="radio" name="size" value="Large" data-price="12"> Large $12.00<br>
+            <input type="radio" name="size" value="Extra Large" data-price="14"> Extra Large $14.00<br>
+        </div>
+
+        <!-- Toppings checkboxes (choose any) at $1.50 each -->
+        <div class="section">
+            <p><strong>Please choose your toppings ($1.50 each):</strong></p>
+            <input type="checkbox" name="topping" value="Pepperoni" data-price="1.5"> Pepperoni<br>
+            <input type="checkbox" name="topping" value="Sausage" data-price="1.5"> Sausage<br>
+            <input type="checkbox" name="topping" value="Bacon" data-price="1.5"> Bacon<br>
+            <input type="checkbox" name="topping" value="Onions" data-price="1.5"> Onions<br>
+            <input type="checkbox" name="topping" value="Spinach" data-price="1.5"> Spinach<br>
+        </div>
+
+        <!-- Order type selection: pickup is free, delivery adds $2 -->
+        <div class="section">
+            <select id="orderType">
+                <option value="Pickup">Pick up</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+        </div>
+
+        <!-- Main action: updates summary and asks for confirmation -->
+        <button type="button" id="confirmButton" onclick="processOrder()">Confirm Your Order</button>
+    </form>
+
+    <div id="demo"></div>
+
+    <script>
+        /**
+         * Build and render the live order summary based on current inputs.
+         * Called on page load and whenever any input changes.
+         */
+        function updateSummary() {
+            const nameField = document.getElementById('customerName');
+            const customerName = (nameField?.value || '').trim(); // safe access in case field is missing
+            const size = document.querySelector('input[name="size"]:checked');
+            const sizeName = size ? size.value : ''; // show nothing until selected
+            const sizePrice = size ? parseFloat(size.dataset.price) : 0; // numeric price
+
+            const toppings = Array.from(document.querySelectorAll('input[name="topping"]:checked'));
+            const toppingNames = toppings.map(t => t.value); // list names only
+            const toppingTotal = toppings.reduce((sum, t) => sum + parseFloat(t.dataset.price), 0); // sum prices
+
+            const orderTypeEl = document.getElementById("orderType");
+            const orderType = orderTypeEl ? orderTypeEl.value : '';
+            const deliveryFee = (orderType === "Delivery") ? 2 : 0; // $2 for delivery, else $0
+
+            const canTotal = Boolean(size); // only compute total once a size is chosen
+            const total = canTotal ? sizePrice + toppingTotal + deliveryFee : null;
+
+            // Render a simple three-column summary table
+            let tableHtml = customerName ? `<h2>${customerName}'s Order</h2>` : `<h2>Your Order</h2>`;
+            tableHtml += `<table class="order-summary" id="orderSummaryTable">`;
+            tableHtml += `<thead><tr><th>Description</th><th>Option</th><th>Price</th></tr></thead>`;
+            tableHtml += `<tbody>`;
+            tableHtml += `<tr><td>Size</td><td>${sizeName}</td><td>${size ? `$${sizePrice}` : ''}</td></tr>`;
+            tableHtml += `<tr><td>Toppings</td><td>${toppingNames.length ? toppingNames.join('<br>') : ''}</td><td>${toppingNames.length ? `$${toppingTotal}` : ''}</td></tr>`;
+            tableHtml += `<tr><td>Pick-Up / Delivery</td><td>${orderType || ''}</td><td>${orderType ? `$${deliveryFee}` : ''}</td></tr>`;
+            tableHtml += `</tbody></table>`;
+            tableHtml += `<p style="font-weight:bold;margin-top:10px;">Your Current Total is ${canTotal ? `$${total}` : '$'}</p>`;
+            document.getElementById("demo").innerHTML = tableHtml;
+        }
+
+        /**
+         * Validate inputs, refresh the on-page summary, then ask the user to confirm.
+         * On OK: redirect to the thank-you page. On Cancel: write a cancellation message.
+         */
+        function processOrder() {
+            const nameField = document.getElementById('customerName');
+            const customerName = nameField.value.trim();
+            if (!customerName) {
+                alert('Please enter your name.');
+                nameField.focus();
+                return;
+            }
+            const size = document.querySelector('input[name="size"]:checked');
+            if (!size) {
+                alert("Please select a pizza size.");
+                return;
+            }
+
+            const sizeName = size.value;
+            const sizePrice = parseFloat(size.dataset.price);
+
+            const toppings = Array.from(document.querySelectorAll('input[name="topping"]:checked'));
+            const toppingNames = toppings.map(t => t.value);
+            const toppingTotal = toppings.reduce((sum, t) => sum + parseFloat(t.dataset.price), 0);
+
+            const orderType = document.getElementById("orderType").value;
+            const deliveryFee = (orderType === "Delivery") ? 2 : 0;
+
+            const total = sizePrice + toppingTotal + deliveryFee;
+
+            // Build order summary table and display latest values before confirmation
+            updateSummary();
+
+            const confirmOrder = confirm("Would you like to submit your order?");
+            if (confirmOrder) {
+                window.location.href = "Mitchell_Lab6Page2.html";
+            } else {
+                document.write("<h2>Your order has been cancelled.</h2>");
+            }
+        }
+
+        // Initialize and auto-update the summary as the user makes selections
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSummary();
+            const nameField = document.getElementById('customerName');
+            if (nameField) nameField.addEventListener('input', updateSummary);
+            document.querySelectorAll('input[name="size"]').forEach(r => r.addEventListener('change', updateSummary));
+            document.querySelectorAll('input[name="topping"]').forEach(c => c.addEventListener('change', updateSummary));
+            const orderTypeEl = document.getElementById('orderType');
+            if (orderTypeEl) orderTypeEl.addEventListener('change', updateSummary);
+        });
+    </script>
+</body>
+</html>
