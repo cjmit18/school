@@ -1,4 +1,8 @@
-/* This lab demonstrates creating an enum,
+/* 
+Wayne Mitchell
+CIS 236
+Week 10 Lab 1
+This lab demonstrates creating an enum,
 creating a variable of that enum's type,
 and checking the value of an enum variable
 */
@@ -43,6 +47,9 @@ int main(void)
             printf("Invalid choice.\n");
     }
     
+    printf("Press Enter to continue...");
+    getchar(); // consume the newline left by scanf
+    getchar(); // wait for user to press Enter
+    
     return 0;
 }
-
