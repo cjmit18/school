@@ -97,3 +97,15 @@ INSERT INTO basePlusCommissionEmployees VALUES ('333-33-3333', 5000, 0.04, 300, 
 
 --insert rows/records into hourlyEmployees table
 INSERT INTO hourlyEmployees VALUES ('444-44-4444', 30, 35.5, 0);
+
+SELECT * FROM employees;
+SELECT * FROM salariedEmployees;
+SELECT * FROM commissionEmployees;
+SELECT * FROM basePlusCommissionEmployees;
+SELECT * FROM hourlyEmployees;
+
+SELECT COUNT(*) AS TotalRows From employees;
+SELECT COUNT(*) AS TotalRows From salariedEmployees;
+SELECT COUNT(*) AS TotalRows From commissionEmployees;
+SELECT COUNT(*) AS TotalRows From basePlusCommissionEmployees;
+SELECT COUNT(*) AS TotalRows From hourlyEmployees;

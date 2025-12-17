@@ -6,7 +6,7 @@ public class SQLDatabaseConnection {
     // Connect to your database.
     // Replace server name, username, and password with your credentials
     static String connectionUrl =
-            "jdbc:sqlserver://M-T2025-01-7A\\SQLEXPRESS;"
+            "jdbc:sqlserver://support\\SQLEXPRESS;"
                     + "database=AdventureWorks2019;"
                     + "integratedSecurity=true;";
 //    static String connectionUrl =

@@ -4,7 +4,7 @@ public class DBConnectionConfig {
 
 
     public static final String connectionUrl =
-            "jdbc:sqlserver://DESKTOP-E6OIR7N\\SQLEXPRESS;"
+            "jdbc:sqlserver://SUPPPORT\\SQLEXPRESS;"
                     + "database=AdventureWorks2019;"
                     + "integratedSecurity=true;";
 

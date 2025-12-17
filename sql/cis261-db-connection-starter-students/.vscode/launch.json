@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DisplayEmployees",
+            "request": "launch",
+            "mainClass": "DisplayEmployees",
+            "vmArgs": "-Djava.library.path=\"${workspaceFolder}\\edu\\jjc\\fall2025\\week16\\db\""
+        }
+    ]
+}
