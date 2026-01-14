@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CIS 223 Chapter 1 Program </title>
+    <script>
+    function getValue() {
+        var vType = prompt("What is your favorite mode of transportation?");
+        document.getElementById("Type").innerHTML = "Vehicle Type: " + vType;
+
+        var vColor = prompt("What is your color is your vehicle?");
+        document.getElementById("Color").innerHTML = "Vehicle Color: " + vColor;
+
+        var vYear = prompt("How many years have you owned your vehicle?");
+        document.getElementById("Year").innerHTML = "Years Owned: " + vYear;
+
+        var vMileage = prompt("What is the mileage of your vehicle?");
+        document.getElementById("Mileage").innerHTML = "Mileage: " + vMileage;
+    }
+    </script>
+</head>
+<body>
+    <h1>Your Transportation</h1>
+    <button onclick="getValue()">Enter Vehicle Information</button>
+    <br><br>
+    <p id="Type">Vehicle Type: </p>
+    <p id="Color">Vehicle Color: </p>
+    <p id="Year">Years Owned: </p>
+    <p id="Mileage">Mileage: </p>
+</body>
+</html>

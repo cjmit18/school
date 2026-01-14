@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    background-image: url('star-system-lynds-483.webp'); /* Replace with your image path */
+    color: rgb(0, 0, 0);
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    border-radius: 1em;
+    padding: 2em;
+}
+header {
+    .header_one {
+        text-align: center;
+        font-size: 1.5em;
+        color: rgb(0, 0, 255);
+    }
+    .header_two {
+        text-align: center;
+        font-size: 1.5em;
+        color: rgb(0, 0, 255);
+}
+}
+
+.navigation ol{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 5em;
+    padding-top: 0;
+    padding-bottom: 2em;
+    font-size: 16px;
+
+    a:link {
+        text-decoration: none;
+        color: pink;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: green;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:active {
+        color: red;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+
+    a:link {
+        text-decoration: none;
+        color: pink;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: green;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:active {
+        color: red;
+    }
+}

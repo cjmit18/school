@@ -1,0 +1,272 @@
+body {
+    background: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#wrapper {
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+    margin: 0 auto;
+}
+
+header {
+    background: url(images/sunset.jpg) right no-repeat;
+    background-color: #002171;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    padding: 1em 0;
+    text-align: center;
+    height: 72px;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 2;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 3px 3px 3px #CCCCCC;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover {
+    text-shadow: 4px 4px 4px #CCCCCC;
+}
+
+nav {
+    background-color: #BBDEFB;
+    font-weight: bold;
+    padding: 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, serif;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+dl dt {
+    color: #002171;
+    font-weight: bold;
+}
+
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+    color: #444444;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    font-style: italic;
+    color: #666666;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #F5F5F5;
+    border-top: 1px solid #DDDDDD;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+    background-color: #EAEAEA;
+    padding: 1em;
+}
+
+label {
+    text-align: right;
+    padding-right: 1em;
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    grid-column: 1 / span 2;
+    width: 9em;
+    background-color: #1976D2;
+    color: #FFFFFF;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.special {
+    font-weight: bold;
+    color: #660099;
+}
+
+h3 {
+    color: #002171;
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #FFFFFF;
+    gap: 1em;
+}
+
+main section {
+    flex: 0 1 30%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.packages {
+    padding: 2em;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 1em;
+    border-top: 3px solid #1976D2;
+}
+
+.packages h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #002171;
+}
+
+.packages p {
+    margin-bottom: 2em;
+    font-size: 1.1em;
+    color: #555555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin: 1em auto;
+    border: 2px solid #002171;
+    border-collapse: collapse;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #002171;
+    color: #FFFFFF;
+    padding: 1em;
+    border: 1px solid #002171;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+td {
+    padding: 1em;
+    border: 1px solid #002171;
+    text-align: center;
+    vertical-align: top;
+    font-size: 1em;
+    background-color: #FFFFFF;
+}
+
+tr:nth-of-type(even) td {
+    background-color: #F8F9FA;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    main section {
+        flex: 1 1 100%;
+        padding: 1em 0;
+    }
+    
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    form {
+        grid-template-columns: 1fr;
+    }
+    
+    label {
+        text-align: left;
+        padding-right: 0;
+    }
+}
+
+nav a { 
+    text-decoration: none; 
+}
+
+nav ul { 
+    list-style-type: none; 
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 0 1em;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(images/coast.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(images/yurt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(images/trail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#coasthero {
+    height: 300px;
+    background-image: url(images/coast.jpg);
+    background-size: cover;
+    background-position: center;
+}

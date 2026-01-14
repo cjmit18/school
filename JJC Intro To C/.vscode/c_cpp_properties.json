@@ -3,14 +3,16 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Users\\bkill\\Desktop\\test\\include\\**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:/MinGW/bin/gcc.exe"
+            "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

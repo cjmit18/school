@@ -1,63 +1,114 @@
-/* 
-Wayne Mitchell
-CIS 236
-Week 10 Lab 2
-This lab demonstrates creating a structure 
-that includes an enum. Then a pointer to the
-structure is created and the structures 
-components are accessed.
-*/
-#include <string.h>
+/* Wayne Mitchell
+ * 10 - Structures and Enums Homework
+ * This program stores and displays movie information using structures,
+ * functions, and enumerated types (for extra credit).
+ */
+
 #include <stdio.h>
+#include <string.h>
 
-// STEP 1 - Copy the enum typedef from Lab 01.
+// ENUM for genres
 typedef enum {
-    sedan,
-    SUV,
-    van
-} 
-// STEP 3 - Give this car structure type a name.
-CarStyle;
-// STEP 2 - Add the three structure components.
+    action,
+    animation,
+    drama,
+    fantasy,
+    superhero
+} Genre;
+
+// STRUCT for movie info
 typedef struct {
-    char make[20];        // 1. make of the car
-    int year;             // 2. year of the car
-    CarStyle style;       // 3. body style
-} Car;
+    char title[26];   // max 25 characters + null
+    int downloads;
+    Genre genre;
+} Movie;
 
-int main(void)
-{
-    // STEP 4 - Create a variable for a car
-    Car myCar;
+// Function prototypes
+void getMovieInfo(Movie *m);
+void displayMovies(Movie movies[], int count);
 
-    // STEP 5 - Create a pointer to the above variable
-    Car *ptrCar = &myCar;
+// MAIN FUNCTION
+int main(void) {
+    int num;
+    printf("How many movies to process? ");
+    scanf("%d", &num);
+    getchar(); // consume newline
 
-    // STEP 6 - Assign hard-coded values
-    strcpy(ptrCar->make, "Honda");
-    ptrCar->year = 2024;
-    ptrCar->style = SUV;
+    Movie movies[num];  // only one array
 
-    // STEP 7 - Print each component's value
-    printf("Make: %s\n", ptrCar->make);
-    
-    printf("Body style: ");
-    switch (ptrCar->style) {
-        case sedan:
-            printf("sedan\n");
-            break;
-        case SUV:
-            printf("SUV\n");
-            break;
-        case van:
-            printf("van\n");
-            break;
-        default:
-            printf("unknown\n");
+    // input
+    for (int i = 0; i < num; i++) {
+        getMovieInfo(&movies[i]);
     }
 
-    printf("Year: %d\n", ptrCar->year);
+    // output
+    displayMovies(movies, num);
 
     return 0;
+}
+
+// FUNCTION 1: get movie info from user
+void getMovieInfo(Movie *m) {
+    char buffer[50]; // local for overflow handling
+    int len;
+
+    printf("\nTitle of movie (max 25 chars): ");
+    fgets(buffer, sizeof(buffer), stdin);
+
+    // Remove trailing newline from fgets
+    len = strlen(buffer);
+    if (len > 0 && buffer[len - 1] == '\n') {
+        buffer[len - 1] = '\0';
+        len--;
+    }
+
+    if (len > 25) {
+        printf("Title exceeds 25 characters and will be truncated\n");
+        strncpy(m->title, buffer, 25);
+        m->title[25] = '\0';
+    } else {
+        strcpy(m->title, buffer);
+    }
+
+    printf("Number of downloads: ");
+    scanf("%d", &m->downloads);
+    getchar(); // consume newline
+
+    // Genre input
+    int g;
+    while (1) {
+        printf("Genre (0-action, 1-animation, 2-drama, 3-fantasy, 4-superhero): ");
+        scanf("%d", &g);
+        getchar(); // flush newline
+
+        if (g >= action && g <= superhero) {
+            m->genre = (Genre)g;
+            break;
+        } else {
+            printf("Invalid genre\n");
+        }
+    }
+}
+
+// FUNCTION 2: display movie list
+void displayMovies(Movie movies[], int count) {
+    printf("\n\tTitle\t\t\tDownloads\tGenre\n");
+    printf("\t===== \t\t\t=========\t=====\n");
+
+    for (int i = 0; i < count; i++) {
+        printf("\t%-25s\t%-9d\t", movies[i].title, movies[i].downloads);
+
+        // print genre text
+        switch (movies[i].genre) {
+            case action: printf("Action"); break;
+            case animation: printf("Animation"); break;
+            case drama: printf("Drama"); break;
+            case fantasy: printf("Fantasy"); break;
+            case superhero: printf("Superhero"); break;
+            default: printf("Unknown");
+        }
+
+        printf("\n");
+    }
 }
 

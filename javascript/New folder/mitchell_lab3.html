@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - Mitchell</title>
+    <script>
+        // Wayne Mitchell
+        // Due October 5, 2025
+        function getInfo() {
+            var employeeName = prompt("Enter your name: ");
+            document.getElementById("Name").innerHTML = "Employee Name: " + employeeName;
+            var hourlyRate = prompt("Enter your hourly pay rate:");
+            document.getElementById("Rate").innerHTML = "Hourly Pay Rate: $" + hourlyRate;
+            var hoursWorked = prompt("Enter hours worked this week:");
+            document.getElementById("Hours").innerHTML = "Hours Worked: " + hoursWorked;
+            var numDependents = prompt("Enter number of dependents:");
+            document.getElementById("Dependents").innerHTML = "Number of Dependents: " + numDependents;   
+        }
+        function calculateGrossPay(rate, hours) {
+            if (hours > 40) {
+                var overtimeHours = hours - 40;
+                var overtimePay = overtimeHours * (rate * 1.5);
+                var regularPay = 40 * rate;
+                var grossPay = regularPay + overtimePay;
+                return grossPay;
+            }
+            var grossPay = rate * hours;
+            return grossPay;
+        }
+
+        function calculateTax(gross, dependents) {
+            var taxRate = 0.0; // Base tax rate of 20%
+            if (dependents == 0 && gross > 1000) {
+                taxRate = 0.33;
+            } else if (dependents == 0 && gross <= 1000) {
+                taxRate = 0.28;
+            } else if (dependents > 0 && dependents <= 3 && gross > 1000) {
+                taxRate = 0.25;
+            } else if (dependents > 0 && dependents <= 3 && gross <= 1000) {
+                taxRate = 0.22;
+            } else if (dependents > 3 && dependents <= 6 && gross > 1000) {
+                taxRate = 0.20;
+            } else if (dependents > 3 && dependents <= 6 && gross <= 1000) {
+                taxRate = 0.15;
+            } else if (dependents > 6 && gross > 1000) {
+                taxRate = 0.15;
+            } else if (dependents > 6 && gross <= 1000) {
+                taxRate = 0.10;
+            } 
+            return gross * taxRate;
+        }
+        function calculateNetPay(gross, tax) {
+            var netPay = gross - tax;
+            return netPay;
+        }
+
+        function calculateWage() {
+            getInfo();
+            var rate = parseFloat(document.getElementById("Rate").innerHTML.split("$")[1]);
+            var hours = parseFloat(document.getElementById("Hours").innerHTML.split(": ")[1]);
+            var dependents = parseInt(document.getElementById("Dependents").innerHTML.split(": ")[1]);
+
+            var grossPay = calculateGrossPay(rate, hours);
+            document.getElementById("gross").innerHTML = "Gross Pay: $" + grossPay.toFixed(2);
+
+            var tax = calculateTax(grossPay, dependents);
+            document.getElementById("tax").innerHTML = "Tax: $" + tax.toFixed(2);
+
+            var netPay = calculateNetPay(grossPay, tax);
+            document.getElementById("Net").innerHTML = "Net Pay: $" + netPay.toFixed(2);
+        }
+        </script>
+</head>
+    <body>
+        <h1>This is my Lab Assignment #3</h1>
+        <button onclick="calculateWage()">Calculate Pay</button>
+        <br><br>
+        <p id="Name">Employee Name: </p>
+        <p id="Rate">Hourly Pay Rate: </p>
+        <p id="Hours">Hours Worked: </p>
+        <p id="Dependents">Number of Dependents: </p>
+        <p id="gross">Gross Pay: </p>
+        <p id="tax">Taxes: </p>
+        <p id="Net">Net Pay: </p>
+    </body>
+</html>

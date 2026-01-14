@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CIS 223 Chapter 8 Program</title>
+    <script>
+        // Function to display and update the current time every second
+        function runClock() {
+            const clock = document.getElementById("clock");
+            setInterval(() => {
+                const now = new Date();
+                clock.textContent = now.toLocaleTimeString();
+            }, 1000);
+        }
+
+        // Function to collect items from form inputs and prompts
+        function collectItems() {
+            // Get values from the three input fields
+            const item1 = document.getElementById("item1").value.trim();
+            const item2 = document.getElementById("item2").value.trim();
+            const item3 = document.getElementById("item3").value.trim();
+
+            let items = [];
+
+            // Add non-empty items to the array
+            if (item1 !== "") items.push(item1);
+            if (item2 !== "") items.push(item2);
+            if (item3 !== "") items.push(item3);
+
+            // Prompt user for additional items
+            let more = prompt("Enter more items, or enter 0 to finish:");
+
+            // Continue prompting until user enters 0
+            while (more !== "0") {
+                if (more !== null && more.trim() !== "") {
+                    items.push(more.trim());
+                }
+                more = prompt("Enter more items, or enter 0 to finish:");
+            }
+
+            // Sort items alphabetically
+            items.sort();
+
+            // Build a numbered list string
+            let listString = "";
+            for (let i = 0; i < items.length; i++) {
+                listString += (i + 1) + ". " + items[i] + "\n";
+            }
+
+            // Display the sorted list
+            alert(listString);
+
+            // Calculate total number of letters (excluding spaces)
+            let totalLetters = 0;
+            for (let i = 0; i < items.length; i++) {
+                totalLetters += items[i].replace(/\s+/g, "").length;
+            }
+
+            // Display statistics
+            alert(
+                "Total letters: " + totalLetters + "\n" +
+                "Total elements: " + items.length
+            );
+        }
+    </script>
+</head>
+
+<body onload="runClock()">
+    <h2>CIS 223 Chapter 8 Program</h2>
+
+    <div style="font-size:20px; margin-bottom:20px;">
+        Current Time: <span id="clock"></span>
+    </div>
+
+    <form onsubmit="collectItems(); return false;">
+        <label>Item 1:</label>
+        <input type="text" id="item1"><br><br>
+
+        <label>Item 2:</label>
+        <input type="text" id="item2"><br><br>
+
+        <label>Item 3:</label>
+        <input type="text" id="item3"><br><br>
+
+        <button type="submit">Submit Items</button>
+    </form>
+
+</body>
+</html>

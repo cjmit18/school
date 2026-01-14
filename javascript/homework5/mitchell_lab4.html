@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 223 Chapter 4 Program</title>
+    <script>
+        function getStudent() {
+            // Get student's first and last name
+            var studentFirstName = prompt("Enter the student's first name:");
+            var studentLastName = prompt("Enter the student's last name:");
+            
+            // Convert first name to uppercase and last name to lowercase
+            studentFirstName = studentFirstName.toUpperCase();
+            studentLastName = studentLastName.toLowerCase();
+            
+            // Array to store grades
+            var grades = [];
+            var gradeInput;
+            var gradeNumber;
+            
+            // Loop to get grades until -1 is entered
+            while (gradeInput !== "-1") {
+                gradeInput = prompt("Enter a grade (0-100) or -1 to finish:");
+                
+                // Check if user wants to exit
+                if (gradeInput === "-1") {
+                    break;
+                }
+                
+                // Convert to number
+                gradeNumber = parseFloat(gradeInput);
+                
+                // Validate input - check if it's a valid number and in range 0-100
+                if (isNaN(gradeNumber) || gradeNumber < 0 || gradeNumber > 100) {
+                    alert("Please enter a valid grade between 0 and 100, or -1 to finish.");
+                    continue;
+                }
+                
+                // Add valid grade to array
+                grades.push(gradeNumber);
+            }
+            
+            // Calculate average
+            var total = 0;
+            for (var i = 0; i < grades.length; i++) {
+                total += grades[i];
+            }
+            var average = grades.length > 0 ? total / grades.length : 0;
+            
+            // Use Math.floor for average/10 to determine grade range
+            var gradeRange = Math.floor(average / 10);
+            
+            // Determine letter grade and range using switch statement
+            var letterGrade;
+            var gradeRangeText;
+            
+            switch (gradeRange) {
+                case 10:
+                case 9:
+                    letterGrade = "A";
+                    gradeRangeText = "90-100%";
+                    break;
+                case 8:
+                    letterGrade = "B";
+                    gradeRangeText = "80-89.9%";
+                    break;
+                case 7:
+                    letterGrade = "C";
+                    gradeRangeText = "70-79.9%";
+                    break;
+                case 6:
+                    letterGrade = "D";
+                    gradeRangeText = "60-69.9%";
+                    break;
+                default:
+                    letterGrade = "F";
+                    gradeRangeText = "below 60%";
+                    break;
+            }
+            
+            // Create the grade report table
+            var tableHTML = "<table border='1' style='border-collapse: collapse; margin: 20px 0;'>";
+            tableHTML += "<tr><th style='padding: 8px; background-color: #f2f2f2;'>Student Grade Report</th><th style='padding: 8px; background-color: #f2f2f2;'></th></tr>";
+            tableHTML += "<tr><td style='padding: 8px;'>First Name</td><td style='padding: 8px;'>" + studentFirstName + "</td></tr>";
+            tableHTML += "<tr><td style='padding: 8px;'>Last Name</td><td style='padding: 8px;'>" + studentLastName + "</td></tr>";
+            
+            // Add individual grades
+            for (var i = 0; i < grades.length; i++) {
+                tableHTML += "<tr><td style='padding: 8px;'>Grade " + (i + 1) + "</td><td style='padding: 8px;'>" + grades[i] + "</td></tr>";
+            }
+            
+            tableHTML += "</table>";
+            
+            // Add semester average below the table
+            tableHTML += "<p><strong>Semester Average: " + average.toFixed(1) + "</strong></p>";
+            
+            // Create grade analysis text
+            var gradeAnalysis = "<p><strong>Based on your semester average, your grade falls between " + gradeRangeText + "</strong></p>";
+            gradeAnalysis += "<p><strong>You have earned a(n) " + letterGrade + "</strong></p>";
+            
+            // Display the results
+            document.getElementById("results").innerHTML = tableHTML + gradeAnalysis;
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Grade Report</h1>
+    <h3>Click the button to begin</h3>
+    <button onclick="getStudent()">Calculate</button>
+    
+    <div id="results"></div>
+</body>
+</html>

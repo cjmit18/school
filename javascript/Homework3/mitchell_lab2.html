@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIS 223 Lab Assignment #2</title>
+        <script>
+        // Wayne Mitchell 
+        // Due September 28, 2025
+        function Calculator() {
+
+            var first = prompt("Enter the first number:");
+            var second = prompt("Enter the second number:");
+
+            first = parseFloat(first);
+            second = parseFloat(second);
+            
+            var sum = findSum(first, second);
+            alert("The sum is: " + sum);
+        }
+
+        function findSum(a, b) {
+            var result = a + b;
+            return result;
+        }
+    </script>
+
+</head>
+<body onload="Calculator()">
+    <h2>This is my Lab Assignment #2</h2>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-image: url('https://images.pexels.com/photos/188029/pexels-photo-188029.jpeg'); /* Replace with your image path */
+    background-size: cover;
+}
+
+#header {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 12x;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#text {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#list {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+}

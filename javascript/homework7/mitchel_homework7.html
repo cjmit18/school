@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIS 223 Chapter 7 Program</title>
+</head>
+<body>
+    <h1>Wheel of Fortune</h1>
+
+    <p id="welcome"></p>
+    <p id="datetime"></p>
+
+    <p><strong>Category:</strong> <span id="category"></span></p>
+
+    <p><strong>Phrase:</strong></p>
+    <p id="puzzle" style="font-size: 2rem; letter-spacing: 0.3rem;"></p>
+
+    <p><strong>Guessed letters:</strong> <span id="guessed-letters">None</span></p>
+    <p><strong>Attempts remaining:</strong> <span id="attempts-remaining"></span></p>
+
+    <label for="guess-input">Enter a letter or try to solve:</label>
+    <input id="guess-input" type="text" maxlength="40">
+    <button id="guess-button">Submit Guess</button>
+
+    <p id="message"></p>
+
+    <!-- Link to external JavaScript file -->
+    <script src="game.js" defer></script>
+</body>
+</html>

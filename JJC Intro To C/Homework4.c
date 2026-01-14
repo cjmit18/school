@@ -6,7 +6,7 @@ This program calculates a purchase total including discounts and tax based on us
 It uses functions to get the purchase amount, ask about spirit wear, and compute the final total.
 Discount logic is handled using if-else selection structures.
 */
-
+#include 
 #include <stdio.h>  // For printf, scanf
 #include <ctype.h>  // For tolower()
 

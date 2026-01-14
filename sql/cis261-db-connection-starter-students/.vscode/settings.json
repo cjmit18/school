@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "edu\\jjc\\fall2025\\week16\\db"
+    ],
+    "java.project.referencedLibraries": [
+        "edu\\jjc\\fall2025\\week16\\db\\mssql-jdbc-13.2.1.jre11.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.debug.settings.vmArgs": "-Djava.library.path=\"${workspaceFolder}\\edu\\jjc\\fall2025\\week16\\db\""
+}
