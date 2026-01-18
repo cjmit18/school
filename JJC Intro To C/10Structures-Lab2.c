@@ -41,8 +41,13 @@ int main(void) {
         getMovieInfo(&movies[i]);
     }
 
+<<<<<<< Updated upstream
     // output
     displayMovies(movies, num);
+=======
+    printf("Year: %d\n", ptrCar->year);
+    getchar(); // Wait for user input before closing
+>>>>>>> Stashed changes
 
     return 0;
 }
