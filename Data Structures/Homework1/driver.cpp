@@ -1,13 +1,16 @@
 /*Wayne Mitchell
 CIS 269
-Vehicle Searching Program
+Vehicle Inventory System
 */
 #include <iostream>
 #include <string>
+#include <iomanip> // added for setw / left
 #include "vehicle.h"
+
 typedef unsigned int uint;
 
 Vehicle globalArray[5];
+
 uint displayMenu();
 void addVehicle();
 void searchForVehicle();
@@ -33,10 +36,10 @@ int main()
                 displayAllVehicles();
                 break;
             case 5:
-                std::cout << "\nGoodbye\n" << std::endl;
+                std::cout << "\nGoodbye.\n" << std::endl;
                 break;
             default:
-                std::cout << "\nInvalid option\n" << std::endl;
+                std::cout << "\nInvalid option.\n" << std::endl;
                 break;
         }
     } while (user != 5);
@@ -56,6 +59,7 @@ std::cout << "\nYour choice: ";
 uint choice;
 std::cin >> choice;
 
+
 return choice;
 }
 
@@ -73,9 +77,10 @@ void addVehicle() {
     std::cin >> vin;
 
     for (uint i{0}; i < 5; i++){
-        if (globalArray[i].getVin() == 0){
-            globalArray[i] = Vehicle(make, model, vin);
-            std::cout << globalArray[i].toString() << std::endl;
+        Vehicle &vehicle = globalArray[i];
+        if (vehicle.getVin() == 0){
+            vehicle = Vehicle(make, model, vin);
+            std::cout << vehicle.toString() << std::endl;
             found = true;
             break;
         }
@@ -96,8 +101,9 @@ void deleteVehicle() {
     std::cin >> vin;
 
     for (uint i{0}; i < 5; i++){
-        if (globalArray[i].getVin() == vin){
-            globalArray[i].setVin(0);
+        Vehicle &vehicle = globalArray[i];
+        if (vehicle.getVin() == vin){
+            vehicle.setVin(0);
             found = true;
             break;
         }
@@ -117,9 +123,11 @@ void searchForVehicle(){
     std::cout << "VIN to display: ";
     std::cin >> vin;
     for (uint i{0}; i < 5; i++){
-        if (globalArray[i].getVin() == vin){
-            std::cout << "\nVIN\t\tMake\t\tModel\n" << std::endl;
-            std::cout << globalArray[i].toString() << std::endl;
+        Vehicle &vehicle = globalArray[i];
+        if (vehicle.getVin() == vin){
+            std::cout << "\n" << std::left << std::setw(10) << "VIN" 
+                      << std::setw(15) << "Make" << std::setw(15) << "Model\n" << std::endl;
+            std::cout << vehicle.toString() << std::endl;
 
             found = true;
             break;
@@ -133,12 +141,14 @@ void searchForVehicle(){
 
 void displayAllVehicles() {
     bool found = false;
-    std::cout << "VIN\t\tMake\t\tModel" << std::endl;
+    std::cout << std::left << std::setw(10) << "VIN" 
+              << std::setw(15) << "Make" << std::setw(15) << "Model" << std::endl;
     for (uint i{0}; i < 5; i++){
-            if (globalArray[i].getVin() != 0){
-                std::cout << globalArray[i].toString();
-                std::cout << std::endl;
-                found = true;
-            }                    
+        Vehicle &vehicle = globalArray[i];
+        if (vehicle.getVin() != 0){
+            std::cout << vehicle.toString();
+            std::cout << std::endl;
+            found = true;
+        }                    
     }
 }

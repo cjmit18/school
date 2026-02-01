@@ -42,8 +42,9 @@ class Vehicle
 
     std::string toString() const {
         std::ostringstream output;
-        output << std::fixed << std::setprecision(2);
-        output << getVin() << "\t\t" << getMake() << "\t\t" << getModel();
+        output << std::left << std::setw(10) << getVin()
+               << std::setw(15) << getMake()
+               << std::setw(15) << getModel();
         return output.str();
 }
 

@@ -1,0 +1,1 @@
+1. Contact three people at your school who use information systems. List their positions, the information they need, the systems they use, and the business functions they perform.
