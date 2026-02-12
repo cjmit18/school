@@ -32,7 +32,7 @@ class Car : public Vehicle {
     std::string toString() const override {
         std::ostringstream output;
         output << Vehicle::toString()
-               << std::left << std::setw(15) << bodyStyle;
+               << std::left << std::setw(15) << getBodyStyle();
         return output.str();
     }
 };

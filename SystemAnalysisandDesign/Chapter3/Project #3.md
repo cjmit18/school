@@ -1,0 +1,1 @@
+1. Think of all the tasks that you perform when you purchase a car. Include any research, decisions, or financial issues related to the purchase. Create a WBS that shows all the tasks, their estimated duration, and any predecessor tasks.

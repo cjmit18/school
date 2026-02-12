@@ -51,7 +51,7 @@ class Vehicle{
     //toString Method for Displaying Vehicle Information
   virtual std::string toString() const {
         std::ostringstream output;
-        output << std::left << std::setw(15) << getVin() << std::setw(15) << getMake() << std::setw(15) << getModel();
+        output << std::left << std::setw(15) << getVin() << std::setw(15) << this->getMake() << std::setw(15) << getModel() << std::setw(15);
         return output.str();
     }
 

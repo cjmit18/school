@@ -2,12 +2,14 @@
 
 **Z-Score** represents the distance that a data value is from the mean in terms of number of standard deviations. We find it by subtracting the mean from the data value and dividing this result by the standard deviation.
 
+$\frac{data-mean}{stdD}$
+
 **Population Z-Score**: $Z = \frac{x-\mu}{\sigma}$
 **Sample z-Score** $z = \frac{x-\bar{x}}{s}$
-The z-Score is unitless. It has a mean - and a standard deviation of 1
+The z-Score is unitless. It has a mean and a standard deviation of 1
 
 ---
-The **Kth percentile**, denoted Pk, of a set of data is a value such that k percent of the observations are less than or equal to the value.
+The **Kth percentile**, denoted k, of a set of data is a value such that k percent of the observations are less than or equal to the value.
 
 **Quartiles** separate datasets into fourths.
 - 2nd quartile (50%) = median 
@@ -30,6 +32,6 @@ Outliers distort the means and standard deviations because they are not resistan
 
 **Step 3.** Determine the fences. **Fences** serve as cutoff points for determining outliers.
 - $Lower Fence = Q1 - 1.5(IQR)$
-- Upper Fence = Q3 + 1.5(IQR)$
+- $Upper Fence = Q3 + 1.5(IQR)$
 
 **Step 4.** If a data value is less than the lower fence or greater than the upper fence, it is considered an outlier.

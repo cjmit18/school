@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter3/Reading 3.5.md",
+                "file": "Chapter3/Reading 3.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reading 3.5"
+              "title": "Reading 3.1"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Statistics",
+                "query": "absol",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,14 +187,15 @@
   "active": "b793b88ed1ebe507",
   "lastOpenFiles": [
     "Chapter3/Reading 3.2.md",
-    "Chapter3/Reading 3.4.md",
-    "Chapter3/Reading 3.5.md",
     "Chapter3/Reading 3.1.md",
+    "Chapter3/Reading 3.5.md",
+    "Chapter3/Reading 3.4.md",
     "Chapter3/221ab677bd4fc5da8ea217cae8c122eb.avif",
+    "Chapter2/Statistics Reading 2.1.md",
+    "2026-02-08.md",
     "Untitled.base",
     "Untitled.canvas",
     "Chapter2/Statistics Reading 2.4.md",
-    "Chapter2/Statistics Reading 2.1.md",
     "Median.md",
     "Chapter2/Statistics Reading 2.2.md"
   ]

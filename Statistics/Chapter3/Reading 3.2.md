@@ -12,7 +12,7 @@ The **Range, R** of a variable is the difference between the largest and smalles
 | The sum of all deviations about the mean must equal zero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <math xmlns="http://www.w3.org/1998/Math/MathML" altimg="../images/math/mathml-65956851-ada6-498b-98f6-d8be101cad4a.svg" alttext="sum open parentheses x subscript i minus mu close parentheses equals 0   text and end text   sum open parentheses x subscript i minus x with bar on top close parentheses equals 0" data-uri="mathml-65956851-ada6-498b-98f6-d8be101cad4a.svg" display="block"><mo>∑</mo><mfenced><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mi>μ</mi></mrow></mfenced><mo>=</mo><mn>0</mn><mo lspace="0.5em"> </mo><mtext>and</mtext><mo lspace="0.5em"> </mo><mo>∑</mo><mfenced><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mover><mi>x</mi><mo>¯</mo></mover></mrow></mfenced><mo>=</mo><mn>0</mn></math> |
-Determining the mean of the absolute value of each deviation about the mean yields a measure of dispersion called the **Mean Absolute Deviation (MAD)**.
+Determining the mean of the  absolute value of each deviation about the mean yields a measure of dispersion called the **Mean Absolute Deviation (MAD)**.
 
 The **Population Standard Deviation**  of a variable is the square root of the sum of squared deviations about the population mean divided by the number of observations in the populations, N.
 
@@ -41,5 +41,6 @@ If a distribution is roughly bell-shaped, then
 - Approximately ﻿95% of the data will lie within 2 standard deviations of the mean. That is, approximately  ﻿95% of the data will lie between $\mu - 2\sigma$﻿ and $\mu - 2\sigma$
     
 - Approximately ﻿99.7 of the data will lie within 3 standard deviations of the mean. That is, approximately ﻿99.7 of the data will lie between ﻿$\mu - 3\sigma$ and $\mu - 3\sigma$
-    
+
+
 

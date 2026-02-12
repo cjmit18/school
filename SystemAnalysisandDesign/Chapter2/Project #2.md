@@ -1,0 +1,1 @@
+1. Use the Internet to find three examples of corporate mission statements.

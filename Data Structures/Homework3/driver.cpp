@@ -15,7 +15,7 @@ Driver File
 
 //Global Variables
 typedef unsigned int uint;
-Vehicle globalArray[5];
+Vehicle *globalArray[5];
 
 //Function Prototypes
 int displayMenu();
@@ -81,95 +81,87 @@ void addVehicle() {
 
     std::cout << "What kind of vehicle would you like to add? (Car or Truck)" << std::endl;
     std::cin >> userResponse;
+
     //Input vehicle information based on type
-    if (userResponse == "car" || userResponse == "Car"){
-        std::cout << "\nMake: " << std::endl;
+    if (userResponse == "car" || userResponse == "Car") {
+        std::cout << "\nMake: ";
         std::cin >> make;
-        std::cout << "\nModel: " << std::endl;
+        std::cout << "\nModel: ";
         std::cin >> model;
-        std::cout << "\nVIN: " << std::endl;
+        std::cout << "\nVIN: ";
         std::cin >> vin;
-        std::cout << "\nBody Style: " << std::endl;
+        std::cout << "\nBody Style: ";
         std::cin >> bodyStyle;
 
-        Car newCar(make, model, vin, bodyStyle);
-        for (uint i{0}; i < 5; i++){
-            Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-            if (vehicle.getVin() == 0){
-                vehicle = Vehicle(make, model, vin);
+        Car* newCar = new Car(make, model, vin, bodyStyle);
+        for (uint i{0}; i < 5; i++) {
+            if (globalArray[i] == nullptr) { // Check for an empty slot
+                globalArray[i] = newCar;
                 found = true;
                 break;
             }
         }
-        if (found){
+        if (found) {
             std::cout << "\nVehicle added to inventory" << std::endl;
-        }
-        else {
+        } else {
             std::cout << "\nInventory slot is full" << std::endl;
+            delete newCar; // Free memory if no slot is available
         }
 
-        std::cout << std::left << std::setw(15) << "VIN"<< std::setw(15) << "Make" << std::setw(15) << "Model"<< std::setw(15) << "Body Style" << std::endl;
-        std::cout << std::left << std::setw(15) <<  newCar.toString() << std::endl;
-    }
-
-    else if (userResponse == "truck" || userResponse == "Truck"){
-        std::cout << "\nMake: " << std::endl;
+        std::cout << std::left << std::setw(15) << "VIN" << std::setw(15) << "Make" << std::setw(15) << "Model" << std::setw(15) << "Body Style" << std::endl;
+        std::cout << newCar->toString() << std::endl;
+    } else if (userResponse == "truck" || userResponse == "Truck") {
+        std::cout << "\nMake: ";
         std::cin >> make;
-        std::cout << "\nModel: " << std::endl;
+        std::cout << "\nModel: ";
         std::cin >> model;
-        std::cout << "\nVIN: " << std::endl;
+        std::cout << "\nVIN: ";
         std::cin >> vin;
         int loadWeight;
-        std::cout << "\nLoad Weight: " << std::endl;
+        std::cout << "\nLoad Weight: ";
         std::cin >> loadWeight;
 
-        Truck newTruck(make, model, vin, loadWeight);
-        for (uint i{0}; i < 5; i++){
-            Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-            if (vehicle.getVin() == 0){
-                vehicle = Vehicle(make, model, vin);
+        Truck* newTruck = new Truck(make, model, vin, loadWeight);
+        for (uint i{0}; i < 5; i++) {
+            if (globalArray[i] == nullptr) { // Check for an empty slot
+                globalArray[i] = newTruck;
                 found = true;
                 break;
             }
         }
-        if (found){
+        if (found) {
             std::cout << "\nVehicle added to inventory" << std::endl;
-        }
-        else {
+        } else {
             std::cout << "\nInventory slot is full" << std::endl;
+            delete newTruck; // Free memory if no slot is available
         }
-        std::cout << std::left << std::setw(15) << "VIN"<< std::setw(15) << "Make"<< std::setw(15) << "Model"<< std::setw(15) << "Load Weight" << std::endl;
-        std::cout << std::left<< std::setw(15) << newTruck.toString() << std::endl;
-    }
-
-    else {
+        std::cout << std::left << std::setw(15) << "VIN" << std::setw(15) << "Make" << std::setw(15) << "Model" << std::setw(15) << "Load Weight" << std::endl;
+        std::cout << newTruck->toString() << std::endl;
+    } else {
         std::cout << "\nInvalid vehicle type." << std::endl;
         return;
     }
 }
 
 void deleteVehicle() {
-
     bool found = false;
-    std::cout << "\nVIN to delete: " << std::endl;
+    std::cout << "\nVIN to delete: ";
     int vin;
     std::cin >> vin;
 
-    for (uint i{0}; i < 5; i++){
-        Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-        if (vehicle.getVin() == vin){
-            vehicle.setVin(0);
+    for (uint i{0}; i < 5; i++) {
+        if (globalArray[i] != nullptr && globalArray[i]->getVin() == vin) {
+            delete globalArray[i]; // Free the memory
+            globalArray[i] = nullptr; // Set the pointer to nullptr
             found = true;
             break;
         }
     }
-        if (found){
-            std::cout << "\nVehicle deleted" << std::endl;
-        }
-        else {
-            std::cout << "\nVehicle does not exist in inventory" << std::endl;
-        }
-
+    if (found) {
+        std::cout << "\nVehicle deleted" << std::endl;
+    } else {
+        std::cout << "\nVehicle does not exist in inventory" << std::endl;
+    }
 }
 
 void searchForVehicle(){
@@ -178,10 +170,10 @@ void searchForVehicle(){
     std::cout << "VIN to display: ";
     std::cin >> vin;
     for (uint i{0}; i < 5; i++){
-        Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-        if (vehicle.getVin() == vin){
+        Vehicle *vehicle = globalArray[i]; //Reference to avoid copying
+        if (vehicle->getVin() == vin){
             std::cout << std::left << std::setw(15) << "VIN" << std::setw(15) << "Make" << std::setw(15) << "Model" << std::setw(15) << "Additional Info" << std::endl;
-            std::cout << std::left<< std::setw(15) <<  vehicle.toString() << std::endl;
+            std::cout << vehicle->toString() << std::endl;
 
             found = true;
             break;
@@ -195,26 +187,23 @@ void searchForVehicle(){
 
 void displayAllVehicles() {
     bool found = false;
-    for (uint i{0}; i < 5; i++){
-        Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-        if (vehicle.getVin() != 0){
+    for (uint i{0}; i < 5; i++) {
+        if (globalArray[i] != nullptr) {
             found = true;
             break;
-        }                    
+        }
     }
-    if (!found){
+    if (!found) {
         std::cout << "\nNo vehicles in inventory\n" << std::endl;
         return;
     }
-    
-    std::cout << std::left << std::setw(15) << "VIN"<< std::setw(15) << "Make"<< std::setw(15) << "Model" << std::setw(15) << "Additional Info" << std::endl;
 
-    for (uint i{0}; i < 5; i++){
-        Vehicle &vehicle = globalArray[i]; //Reference to avoid copying
-        if (vehicle.getVin() != 0){
-            std::cout << vehicle.toString();
-            std::cout << std::left<< std::setw(15) <<  std::endl;
-        }                    
+    std::cout << std::left << std::setw(15) << "VIN" << std::setw(15) << "Make" << std::setw(15) << "Model" << std::setw(15) << "Additional Info" << std::endl;
+
+    for (uint i{0}; i < 5; i++) {
+        if (globalArray[i] != nullptr) {
+            std::cout << globalArray[i]->toString() << std::endl;
+        }
     }
 }
 

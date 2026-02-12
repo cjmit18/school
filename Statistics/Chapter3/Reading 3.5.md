@@ -1,4 +1,4 @@
-Remember that **Median** is resistant to extreme values, so it is the preferred measure of central tendency when data is skewed left or right.
+1Remember that **Median** is resistant to extreme values, so it is the preferred measure of central tendency when data is skewed left or right.
 
 The three measures of dispersion that are not resistant are: **Range, Standard deviation and variance.** The interquartile range is resistant. 
 
