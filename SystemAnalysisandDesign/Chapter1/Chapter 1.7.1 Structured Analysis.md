@@ -1,0 +1,1 @@
+The **Systems development life cycle** are activities and functions that systems developers typically perform, regardless of how those activities 
