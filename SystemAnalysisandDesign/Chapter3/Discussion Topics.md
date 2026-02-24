@@ -1,3 +1,8 @@
 1. When using a project triangle to illustrate conflicting priorities, Microsoft suggests that if the problem is in the fixed leg, work on the other two legs. For example, if the project must be within the budget and is starting to run over, adjust the schedule, the scope, or both. However, the adjustment might be in the remaining portion if the problem is unrelated to the fixed leg. So, when faced with a limited budget (fixed leg) and the schedule is slipping (problem leg), the project’s scope (remaining leg) might have to be adjusted. Why is explaining this situation to management sometimes difficult for the systems analyst?
     
 2. Consider a scenario where a task depends on another task being started but not necessarily completed. For example, a project may depend on a task being started and one-fourth completed before the group can start their portion. Do you think this situation occurs frequently in systems projects? Why or why not?
+
+
+Management might not have the full picture or technical know how on why something needs to be changed because of technical knowledge that they typically don't care about or don't have the most know how about. Most of the time management only cares for progress and deadlines so convincing them to change requirements would be a difficult endeavor especially towards the end of the projects life cycle. 
+
+Yes because all systems need some sort of foundation to be able to support systems further down the line even if the task is simple. That task specifically could be part of a bigger overall system that can be completed later down the line when more of the system is fleshed out or the function they need is specifically from the previous task.

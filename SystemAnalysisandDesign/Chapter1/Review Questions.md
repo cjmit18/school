@@ -10,8 +10,6 @@
  10. What are the roles and responsibilities of a systems analyst in a modern business
 
 
-
- 
 Information technology is a combination of hardware, software and telecommunication systems that support business operations, improve productivity, and help manager make decisions. It affects society and numerous different ways such as healthcare, the banking industry , finances and overall personal visibility.
 
 Hardware, software, data, process, people
@@ -20,6 +18,16 @@ They disrupt the taxicab business model because it allows anyone with a car to b
 
 I would say Home Depots business profile include professional contractors or DIY individuals with strong values towards their community and functions to allow people to improve or build upon a home project. 
 
-Enterprise Computing, Transaction Processing Systems, Management Information Systems, Knowledge Systems, Business Support Systems, User Productivity Systems, Enterprise Resource Planning, Systems Integration
+Enterprise Computing, Transaction Processing Systems, Management Information Systems, Knowledge Systems, Business Support Systems, User Productivity Systems, 
 
 Top management needs things like economic forecast, tech trends, competitive threats and government issues, a middle manager might review a sales summary for the company while a team lead or supervisor would only need information for their specific location. Operational employees only need information on how to accomplish their task
+
+
+Structured analysis represents the system in terms of data and the processes that act upon that data system; development is divided into different phases. In an OOA method the system views data and processes as objects. and phases are more interactive. In an agile method it relies on team effort and breaks the development cycle into cycles or iterations.
+We use data flow diagrams for Structured Analysis. In OOA data is organized into classes or objects and viewed that way. The Agile methodology uses collaborative software and other team oriented avenues to collaborate on a project.
+
+Application lifecycle management software, Integrated development environments and computer aided system engineering software.
+
+The IT departments just is to maintain a company or organizations network and computer privacy, support its users with various issues and to ensure that the network stays up or has redundancies in place.
+
+A systems analyst is a person who is suppose to review and ensure a companies IT pipeline in order to make sure that it works both effectively production wise and cost wise as well as support a system that might be in the midst of a failure or disaster.
