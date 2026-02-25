@@ -45,20 +45,45 @@ class LinkedList {
 
     void deleteNode(int dataToDelete) {
         LLNode *current = head;
-        bool isDeleted{false};
-        while (!isDeleted && current != nullptr){
-            if (current->data != dataToDelete){
-                current = current->next;
-                std::cout << "Not Deleted" << std::endl;
-                return;
+        LLNode *previous = nullptr;
+        bool isDeleted = false;
+
+        while(current != nullptr){
+            if (current->getData() == dataToDelete){
+                if (head == current && tail == current){
+                    head = nullptr;
+                    tail = nullptr;
+                    delete current;
+                    isDeleted = true;
+                    return;
+                }
+                else if (head == current){
+                    head = current->getNext();
+                    delete current;
+                    isDeleted = true;
+                    return;
+                }
+                else if (tail == current){
+                    tail = previous;
+                    previous->setNext(nullptr);
+                    delete current;
+                    isDeleted = true;
+                    return;
+                }
+                else {
+                    previous->setNext(current->getNext());
+                    delete current;
+                    isDeleted = true;
+                    return;
+                }
             }
-            else {
-                
-                return;
-            }
+                previous = current;
+                current = current->getNext();
+        }
+        if (!isDeleted){
+            std::cout << "Node Not Found" << std::endl;
         }
     }
-
     // Create a new node and insert it at the front of the list.
     // If the list is empty, head and tail both point to the new node.
     void addToHead(int data) {
