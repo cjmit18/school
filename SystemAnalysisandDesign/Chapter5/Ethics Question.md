@@ -1,0 +1,5 @@
+- This is your first week in your new job at Safety Zone, a leading producer of IT modeling software. Your prior experience with a smaller competitor gave you an edge in landing the job, and you are excited about joining a larger company in the same field.
+    
+    So far, all is going well, and you are getting used to the new routine. However, you are concerned about one issue. In your initial meeting, the IT manager seemed very interested in the details of your prior position, and some of the questions made you a little uncomfortable. The manager did not actually ask you to reveal any proprietary information but made it clear that Safety Zone likes to know as much as possible about its competitors.
+    
+    Thinking about it, you try to draw a line between information that is okay to discuss and topics such as software specifics or strategy that should be considered private. This is your first time in a situation like this. How will you handle it?

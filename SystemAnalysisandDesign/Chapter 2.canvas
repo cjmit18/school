@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"9062542f1b5f8de8","type":"file","file":"Chapter2/CIS250_Mitchell_DiscussionTopics2.docx","x":-320,"y":-362,"width":400,"height":400},
+		{"id":"30a20c1fb31133bc","type":"file","file":"Chapter2/CIS250_Mitchell_Project2.docx","x":125,"y":-362,"width":400,"height":400},
+		{"id":"7bcc4be2b5903e2f","type":"file","file":"Chapter2/CIS250_Mitchell_ReviewQuestions.docx","x":570,"y":-362,"width":400,"height":400},
+		{"id":"213f4ec7892d97d0","type":"file","file":"Chapter2/Discussion Topics.md","x":1460,"y":-362,"width":400,"height":400},
+		{"id":"0057a14247584d93","type":"file","file":"Chapter2/Discussion Question.md","x":1000,"y":-362,"width":400,"height":400},
+		{"id":"cf6b7e303a8ae35e","type":"file","file":"Chapter2/Project #2.md","x":-320,"y":120,"width":400,"height":400},
+		{"id":"0713725e82d410f3","type":"file","file":"Chapter2/Review Questions.md","x":1940,"y":-362,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"f8903201557c0d9d","fromNode":"0057a14247584d93","fromSide":"right","toNode":"213f4ec7892d97d0","toSide":"left"},
+		{"id":"9859a172c286698b","fromNode":"213f4ec7892d97d0","fromSide":"right","toNode":"0713725e82d410f3","toSide":"left"}
+	]
+}

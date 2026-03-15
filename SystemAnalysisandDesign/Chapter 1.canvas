@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"13de1a40eed0dfdc","type":"file","file":"Chapter1/Chapter 1 Information Technology.md","x":1,"y":-397,"width":400,"height":400},
+		{"id":"4548a958029a7b74","type":"file","file":"Chapter1/Chapter 1.2 Information Systems.md","x":446,"y":-397,"width":400,"height":400},
+		{"id":"afe304d5507f765b","type":"file","file":"Chapter1/Chapter 1.3 Internet Business Stategies.md","x":891,"y":-397,"width":400,"height":400},
+		{"id":"3a5af2e970a9c07c","type":"file","file":"Chapter1/Chapter 1.4 Modeling Business Operations.md","x":1336,"y":-397,"width":400,"height":400},
+		{"id":"e518337d334e2b27","type":"file","file":"Chapter1/Chapter 1.5 Business Information Systems.md","x":1781,"y":-397,"width":400,"height":400},
+		{"id":"ace633efef25b076","type":"file","file":"Chapter1/Chapter 1.6 Organizational Information Models.md","x":2226,"y":-397,"width":400,"height":400},
+		{"id":"48f47f70d1966229","type":"file","file":"Chapter1/Chapter 1.7 System Development.md","x":2671,"y":-397,"width":400,"height":400},
+		{"id":"ee4295e63cbacb21","type":"file","file":"Chapter1/Chapter 1.7.1 Structured Analysis.md","x":3116,"y":-397,"width":400,"height":400},
+		{"id":"c98a10aec916e9f0","type":"file","file":"Chapter1/CIS250_Mitchell_Project1.docx","x":-444,"y":48,"width":400,"height":400},
+		{"id":"2ff9a7987b470660","type":"file","file":"Chapter1/CIS250_Mitchell_ReviewQuestions.docx","x":1,"y":48,"width":400,"height":400},
+		{"id":"9326f277dbdd5645","type":"file","file":"Chapter1/Discussion Question (AutoRecovered).txt","x":891,"y":48,"width":400,"height":400},
+		{"id":"7029b73f6043d874","type":"file","file":"Chapter1/Project #1.md","x":446,"y":48,"width":400,"height":400},
+		{"id":"d10e68871d47e917","type":"file","file":"Chapter1/CIS250_Mitchell_DiscussionTopics1.docx","x":-880,"y":48,"width":400,"height":400},
+		{"id":"fc61e6d123513808","type":"file","file":"Chapter1/Discussion Topics.md","x":1336,"y":48,"width":400,"height":400},
+		{"id":"66797311279057f7","type":"file","file":"Chapter1/Discussion Question.md","x":1781,"y":48,"width":400,"height":400},
+		{"id":"6ea0b1efa8f0f767","type":"file","file":"Chapter1/Review Questions.md","x":2226,"y":48,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"d8b93bd488d98b75","fromNode":"13de1a40eed0dfdc","fromSide":"right","toNode":"4548a958029a7b74","toSide":"left"},
+		{"id":"f19cd2920250f1f7","fromNode":"4548a958029a7b74","fromSide":"right","toNode":"afe304d5507f765b","toSide":"left"},
+		{"id":"567793e4617206b1","fromNode":"afe304d5507f765b","fromSide":"right","toNode":"ee4295e63cbacb21","toSide":"right"},
+		{"id":"8b5e043d10c14fc5","fromNode":"fc61e6d123513808","fromSide":"right","toNode":"6ea0b1efa8f0f767","toSide":"left"}
+	]
+}
