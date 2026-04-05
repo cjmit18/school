@@ -1,0 +1,12 @@
+car,99878,Chevrolet,Camaro,sports car
+car,34031,Audi,A5,sedan
+car,26367,Cadillac,XTS,sedan
+car,67240,Buick,Regal,sedan
+car,18586,Land,Rover Discovery,suv
+truck,89776,Dodge,Ram,3000
+car,35962,Hyundai,Elantra,sedan
+truck,85773,Chevrolet,Silverado,2000
+car,77646,Chrysler,300,sedan
+car,88512,Nissan,Pathfinder,suv
+car,19223,Mitsubishi,Outlander,suv
+truck,72702,Ford,F-150,2500
