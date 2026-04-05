@@ -1,0 +1,4 @@
+Visit the administrative office at your school or a local company. Ask to see examples of input screens. Analyze the design and appearance of each screen and try to identify at least one possible improvement.
+
+
+An improvement to my Jobs computer systems is automatic logoff functions based on either a timer or expiring cookie keys faster due to employees staying logged into the wrong accounts mistakenly due to not being prompted to log with a fresh account and because most people don't check if its necessary to log in for example if its a company shared login which in this case its not versus the amount of people who do check might lead  to someone's information being exposed or someone could take advantage of an open computer system if they had nefarious ideations.

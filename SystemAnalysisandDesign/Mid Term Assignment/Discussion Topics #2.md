@@ -1,0 +1,3 @@
+1. When team members are geographically dispersed, communication becomes more challenging. Explain how groupware can increase user productivity in this context.
+
+Groupware allows people to be able to connect no matter when something happens for instance if I was using Slack or Zoom and the company I worked for was in a different time zone I would still be able to collaborate with them either through text messaging, video conferences or anything in between through these groupware applications that allow people to connect with one another on projects no matter where they are.

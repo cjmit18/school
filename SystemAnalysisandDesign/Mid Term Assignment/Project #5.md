@@ -1,0 +1,1 @@
+1. Think of a technical problem you have experienced at school or work and draw a sample fishbone diagram with at least two levels.

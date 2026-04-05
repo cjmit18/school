@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8d1abd6d92aa1516",
+        "id": "46f65049781d4211",
         "type": "tabs",
         "children": [
           {
-            "id": "b793b88ed1ebe507",
+            "id": "70f5f4ce853ea707",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reading 4.3.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Reading 4.3"
+              "title": "New tab"
             }
           }
         ]
@@ -184,24 +180,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "b793b88ed1ebe507",
+  "active": "70f5f4ce853ea707",
   "lastOpenFiles": [
-    "Reading 4.2.md",
+    "Chapter3/Reading 3.4.md",
+    "Chapter3/Reading 3.2.md",
+    "Chapter3/Reading 3.1.md",
+    "Chapter2/Statistics Reading 2.2.md",
+    "Chapter2/Statistics Reading 2.1.md",
     "Reading 4.3.md",
+    "Reading 4.2.md",
     "c50d66d754d88bd6209fd947c65c54a5.avif",
     "Chapter4/Reading 4.1.md",
-    "Chapter3/Reading 3.4.md",
     "Chapter3/Reading 3.5.md",
-    "Chapter3/Reading 3.1.md",
     "Chapter4",
-    "Chapter3/Reading 3.2.md",
     "Chapter3/221ab677bd4fc5da8ea217cae8c122eb.avif",
-    "Chapter2/Statistics Reading 2.1.md",
     "2026-02-08.md",
     "Untitled.base",
     "Untitled.canvas",
     "Chapter2/Statistics Reading 2.4.md",
-    "Median.md",
-    "Chapter2/Statistics Reading 2.2.md"
+    "Median.md"
   ]
 }

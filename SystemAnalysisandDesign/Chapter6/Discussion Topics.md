@@ -1,0 +1,8 @@
+1. You are an IT consultant asked to create a new system for a small real estate brokerage firm. You need to gain experience with an O-O approach and decide to try it. How will you begin? How will the tasks differ from structured analysis?
+    
+2. Some professionals believe it is harder for experienced analysts to learn object-modeling techniques because they are accustomed to thinking about data and processes as separate entities. Others believe that solid analytical skills are easily transferable to the newer approach. What do you think, and why?
+
+
+I would begin by analyzing and gathering data on things like people, places, events, and transactions to be able to establish an object oriented view on what needs to be included in my data flow diagrams and how they would interact with other objects and systems within the entire information system. It differs from structured analysis by way that structured analysis is typically divided from a top down or ordered perspective to display how systems work together or need to be assembled while O-O analysis shows us a bigger picture on the how the data is being used, why the data is being used and where its coming and going.
+
+I believe that its easier to interpret O-O data because it allows you to see what is being interacted with and why its doing what its doing. Everything is separated and compartmentalized so that each individual object only interacts with other objects when explicitly messaged. It allows for changed in systems without effecting things already in the system.

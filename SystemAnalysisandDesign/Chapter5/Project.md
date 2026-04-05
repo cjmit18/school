@@ -1,2 +1,6 @@
 The data flow symbols shown in Figure 5-1 were designed by Ed Yourdon, a well-known IT author, lecturer, and consultant. Many IT professionals consider him among the most influential people in the software field. Learn more about Yourdon by visiting online resources and writing a brief review of his work.
 
+
+
+Ed Yourdon was a software engineer whom earned is Bachelors of Science  in Applied Mathematics from MIT he also did some graduate work but did not achieve a masters degree, despite that he was made an honorary professors of Information Technology at the Universidad CAECE in Buenos Aires. He's an author of over 200 technical articles and wrote over a dozen books including Object-Oriented Design(1991) and Object-Oriented Analysis.
+Yourdon started his career at the company Digital Equipment company  and had been involved in a number of pioneering computer technologies like time-sharing operating systems and virtual memory systems. His contribution in relation to object oriented design has helped shape the way we have created software and systems. Yourdon founded Yourdon Inc which is an influential consulting and educational firm in which has trained over 200k professionals in software engineering techniques.

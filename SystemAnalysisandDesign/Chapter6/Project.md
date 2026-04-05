@@ -1,0 +1,4 @@
+1. Contact your school’s or local business’s IT staff to learn if they use O-O programming languages. If so, determine what languages and versions are used, how long they have been used, and why they were selected.
+
+
+My credit union uses Java 8 for over a decade and its been chosen because Java is innately an object oriented language and financial services like to utilize languages like Java to be able to move data around as objects and edit the data within the objects such as accounts, people or transactions. Java makes being able to read data about specific things easier due to the way it is designed. 
