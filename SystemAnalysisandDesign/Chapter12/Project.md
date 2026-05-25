@@ -1,0 +1,1 @@
+1. Design a comprehensive training workshop for introducing new software to your school or a local organization. The project will involve researching the software, identifying key features and common challenges, developing training materials, and facilitating a mock session with your peers.

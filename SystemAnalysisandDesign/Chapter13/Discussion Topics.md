@@ -1,0 +1,7 @@
+1. How do attacker profiles and motivations influence the steps involved in risk identification?
+    
+2. Discuss the relationship between developing and implementing security policies and the essential elements of effective backup policies.
+
+The attackers profile and motivations directly affect how someone would classify that risk because some people might be white hat hackers who want to assist and some people are malicious internal threats that need to be worked out and thus the steps need to adapt to how the person is interacting with the information systems within the organization.
+
+The development and implementation of security policies directly shapes the design of effective backup policies, as backup policies serve as a practical extension of an organization's broader security framework. Security policies establish foundational guidelines around risk assessment, data classification, and regulatory compliance, which backup policies then translate into actionable procedures such as determining what data to back up, how frequently, and for how long to retain it. Both policy types must be periodically reviewed and updated to address emerging threats and changing legal landscapes, ensuring that an organization maintains resilience and data availability. Essentially, security policies set the rules and standards, while backup policies operationalize those standards through specific methodologies like full, incremental, differential, and continuous backups, along with secure storage and disposal practices.

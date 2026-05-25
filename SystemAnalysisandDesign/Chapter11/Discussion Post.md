@@ -1,0 +1,6 @@
+- A team member is handling the testing for the new accounting system and is very upset about the most recent results. “Every time we fix one problem, another one pops up! After 10 days of testing and adjusting, we meet over 90% of the goals and benchmarks. If we’re looking for perfection, we’ll never make the implementation deadline for the new system, and the users will be all over us. Not to mention top management’s reaction to a delay. I’m sure we can resolve some of these issues after the system becomes operational.”
+    
+    How would you respond to this statement? Are ethical issues involved? What are your responsibilities as an employee, as an IT professional, and as a co-worker?
+
+
+I personally would tell this person that they should just continue trying their best to iron out the details and keep a paper trail on whats happening, why and what they should do going forward. not only are they at 90 percent completion and perfection unless critical isnt necessary. I think the best course of action is to escalate to a manager and go from their if this barrier is something the needs to be overcome before launch day of if a delay would be practical.
