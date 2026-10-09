@@ -1,0 +1,1014 @@
+<div id="dp-wrapper" class="dp-wrapper">
+    <div style="max-width: 1100px; margin: 0 auto; font-family: Arial, Helvetica, sans-serif; color: #1f2937; line-height: 1.6; border: 3px solid #c69214; border-radius: 12px; overflow: hidden; background-color: #ffffff;">
+
+        <div style="background-color: #0a2240; color: #ffffff; padding: 24px;">
+            <h2 style="margin: 0; font-size: 28px;">Linux Midterm Command Review</h2>
+            <p style="margin: 10px 0 0 0; font-size: 16px;">NDG Linux Essentials — Modules 1–9 Command and Concept Reference</p>
+        </div>
+
+        <div style="padding: 22px; background-color: #fffdf7; border-bottom: 1px solid #e5e7eb;">
+            <div style="background-color: #f8f5e6; border-left: 8px solid #c69214; padding: 16px 18px; border-radius: 8px;">
+                <p style="margin-top: 0;"><strong>Review Focus:</strong> Know what each command does, recognize common options, and understand how commands are used with files, directories, permissions, help tools, variables, redirection, and basic Linux system information.</p>
+                <p style="margin-bottom: 0;"><strong>Note:</strong> Module 4 is included as key open source and licensing terms because it is concept-heavy rather than command-heavy.</p>
+            </div>
+        </div>
+
+        <div style="padding: 24px;">
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 1: Introduction to Linux</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Linux</code></p>
+    <p style="margin-bottom: 0;">The operating system kernel that manages hardware, memory, processes, devices, and system resources.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>GNU/Linux</code></p>
+    <p style="margin-bottom: 0;">A full operating system environment that combines the Linux kernel with GNU tools and other software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Kernel</code></p>
+    <p style="margin-bottom: 0;">The core part of the operating system that manages communication between software and hardware.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Linux distribution</code></p>
+    <p style="margin-bottom: 0;">A complete Linux-based operating system that includes the kernel, tools, applications, and package management.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Linux Mint</code></p>
+    <p style="margin-bottom: 0;">A beginner-friendly Linux distribution with a graphical desktop and terminal access.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>GUI</code></p>
+    <p style="margin-bottom: 0;">Graphical User Interface; uses windows, menus, icons, and a mouse.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CLI</code></p>
+    <p style="margin-bottom: 0;">Command Line Interface; uses typed commands in a terminal.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whoami</code></p>
+    <p style="margin-bottom: 0;">Shows the current logged-in username.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>pwd</code></p>
+    <p style="margin-bottom: 0;">Prints the current working directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls</code></p>
+    <p style="margin-bottom: 0;">Lists files and folders in the current directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>hostname</code></p>
+    <p style="margin-bottom: 0;">Shows the computer or system name.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>date</code></p>
+    <p style="margin-bottom: 0;">Displays the current system date and time.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat /etc/os-release</code></p>
+    <p style="margin-bottom: 0;">Displays Linux distribution information.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>uname -r</code></p>
+    <p style="margin-bottom: 0;">Shows the Linux kernel version.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 2: Operating Systems and Linux Servers</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Operating system</code></p>
+    <p style="margin-bottom: 0;">Software that manages hardware, applications, files, users, and system resources.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Windows</code></p>
+    <p style="margin-bottom: 0;">Common desktop operating system used in home, school, and business environments.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>macOS</code></p>
+    <p style="margin-bottom: 0;">Apple operating system based on UNIX concepts and designed for Apple hardware.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Linux server</code></p>
+    <p style="margin-bottom: 0;">A Linux system that provides services such as websites, databases, file sharing, cloud systems, or security tools.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Red Hat family</code></p>
+    <p style="margin-bottom: 0;">Linux distribution family commonly used in enterprise server environments.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Debian family</code></p>
+    <p style="margin-bottom: 0;">Linux distribution family that includes Debian, Ubuntu, and Linux Mint.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>SUSE family</code></p>
+    <p style="margin-bottom: 0;">Linux distribution family often used in professional and enterprise environments.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat /etc/os-release</code></p>
+    <p style="margin-bottom: 0;">Identifies the Linux distribution and release information.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>uname -r</code></p>
+    <p style="margin-bottom: 0;">Displays the current Linux kernel version.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ip addr</code></p>
+    <p style="margin-bottom: 0;">Shows network interface and IP address information.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ip -br a</code></p>
+    <p style="margin-bottom: 0;">Shows brief network interface and IP address information.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>df -h</code></p>
+    <p style="margin-bottom: 0;">Shows disk space usage in human-readable format.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>free -h</code></p>
+    <p style="margin-bottom: 0;">Shows memory usage in human-readable format.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo apt update</code></p>
+    <p style="margin-bottom: 0;">Updates package information on Debian, Ubuntu, and Linux Mint systems.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 3: Working in Linux</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>date</code></p>
+    <p style="margin-bottom: 0;">Shows the current system date and time.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat /etc/machine-id</code></p>
+    <p style="margin-bottom: 0;">Displays the unique machine ID for the Linux system.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>pwd</code></p>
+    <p style="margin-bottom: 0;">Shows the current working directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whoami</code></p>
+    <p style="margin-bottom: 0;">Shows the current logged-in user.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls</code></p>
+    <p style="margin-bottom: 0;">Lists files and folders in the current directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>nano notes.txt</code></p>
+    <p style="margin-bottom: 0;">Opens or creates a text file named notes.txt in the nano editor.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo apt update</code></p>
+    <p style="margin-bottom: 0;">Refreshes available software package information.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>apt list --installed | head</code></p>
+    <p style="margin-bottom: 0;">Lists installed packages and displays only the first several lines.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo ufw status</code></p>
+    <p style="margin-bottom: 0;">Checks the status of the uncomplicated firewall.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>apt</code></p>
+    <p style="margin-bottom: 0;">Debian-based package management tool used by Linux Mint, Ubuntu, and Debian.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>apt-get</code></p>
+    <p style="margin-bottom: 0;">Older Debian-based package management command still commonly seen in documentation.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>dpkg</code></p>
+    <p style="margin-bottom: 0;">Lower-level Debian package tool used to install, remove, and inspect packages.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>rpm</code></p>
+    <p style="margin-bottom: 0;">Package format and tool used by Red Hat-based Linux systems.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>dnf</code></p>
+    <p style="margin-bottom: 0;">Package manager commonly used by Fedora and other Red Hat-based systems.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>root</code></p>
+    <p style="margin-bottom: 0;">The most powerful administrative account on a Linux system.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Virtual machine</code></p>
+    <p style="margin-bottom: 0;">A complete guest operating system running on a host computer through a hypervisor.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Container</code></p>
+    <p style="margin-bottom: 0;">A lightweight isolated application environment; commonly associated with Docker and Kubernetes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Hypervisor</code></p>
+    <p style="margin-bottom: 0;">Software that manages virtual machines on a host system.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 4: Open Source Software and Licensing</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Open source software</code></p>
+    <p style="margin-bottom: 0;">Software where the source code can be viewed, studied, modified, and often shared under license rules.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Source code</code></p>
+    <p style="margin-bottom: 0;">Human-readable instructions written by programmers to create software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Compiled software</code></p>
+    <p style="margin-bottom: 0;">Software translated into a form the computer can run.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Software license</code></p>
+    <p style="margin-bottom: 0;">Defines what users are allowed to do with software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>EULA</code></p>
+    <p style="margin-bottom: 0;">End User License Agreement; a legal agreement users accept before using software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>GPL</code></p>
+    <p style="margin-bottom: 0;">GNU General Public License; an open source license with copyleft requirements.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>GPLv2</code></p>
+    <p style="margin-bottom: 0;">Version 2 of the GNU General Public License.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Copyleft</code></p>
+    <p style="margin-bottom: 0;">Requires modified redistributed versions to remain under the same license terms.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Permissive license</code></p>
+    <p style="margin-bottom: 0;">Open source license with fewer restrictions than copyleft licenses.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>FOSS</code></p>
+    <p style="margin-bottom: 0;">Free and Open Source Software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>FLOSS</code></p>
+    <p style="margin-bottom: 0;">Free/Libre/Open Source Software.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>FSF</code></p>
+    <p style="margin-bottom: 0;">Free Software Foundation; promotes software freedom and copyleft licensing.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>OSI</code></p>
+    <p style="margin-bottom: 0;">Open Source Initiative; supports and approves open source licenses.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Creative Commons</code></p>
+    <p style="margin-bottom: 0;">Licenses often used for creative works such as images, videos, documents, and learning materials.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC BY</code></p>
+    <p style="margin-bottom: 0;">Creative Commons license requiring attribution to the creator.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC BY-SA</code></p>
+    <p style="margin-bottom: 0;">Requires attribution and sharing modified versions under the same license.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC BY-ND</code></p>
+    <p style="margin-bottom: 0;">Allows sharing with attribution but does not allow modified versions.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC BY-NC</code></p>
+    <p style="margin-bottom: 0;">Allows use with attribution but not for commercial purposes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC BY-NC-ND</code></p>
+    <p style="margin-bottom: 0;">Requires attribution, does not allow commercial use, and does not allow modified versions.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>CC0</code></p>
+    <p style="margin-bottom: 0;">Public domain style license with no rights reserved.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 5: Command Line Skills</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>student@linuxmint:~$</code></p>
+    <p style="margin-bottom: 0;">Example terminal prompt showing username, hostname, current directory, and normal user prompt.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>command [options] [arguments]</code></p>
+    <p style="margin-bottom: 0;">Common Linux command pattern: command first, options modify behavior, arguments tell the command what to act on.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>pwd</code></p>
+    <p style="margin-bottom: 0;">Shows the current working directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls</code></p>
+    <p style="margin-bottom: 0;">Lists files and directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>date</code></p>
+    <p style="margin-bottom: 0;">Displays the current system date and time.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cal</code></p>
+    <p style="margin-bottom: 0;">Displays a calendar.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whoami</code></p>
+    <p style="margin-bottom: 0;">Shows the current logged-in username.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>hostname</code></p>
+    <p style="margin-bottom: 0;">Shows the computer or system name.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>clear</code></p>
+    <p style="margin-bottom: 0;">Clears the terminal screen.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -l</code></p>
+    <p style="margin-bottom: 0;">Lists files in long format.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -a</code></p>
+    <p style="margin-bottom: 0;">Shows all files, including hidden files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -h</code></p>
+    <p style="margin-bottom: 0;">Shows sizes in human-readable format when used with long listing options.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lh</code></p>
+    <p style="margin-bottom: 0;">Shows long listing details with human-readable file sizes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lah</code></p>
+    <p style="margin-bottom: 0;">Shows hidden files, long format, and human-readable sizes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -r</code></p>
+    <p style="margin-bottom: 0;">Reverses the listing order.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lr</code></p>
+    <p style="margin-bottom: 0;">Shows long format in reverse order.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /etc</code></p>
+    <p style="margin-bottom: 0;">Lists the contents of the /etc directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -l /etc</code></p>
+    <p style="margin-bottom: 0;">Lists /etc in long format.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /etc /bin</code></p>
+    <p style="margin-bottom: 0;">Lists multiple directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>history</code></p>
+    <p style="margin-bottom: 0;">Displays previously typed commands.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>history 5</code></p>
+    <p style="margin-bottom: 0;">Shows the most recent five commands.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>history | tail -n 10</code></p>
+    <p style="margin-bottom: 0;">Shows the last ten commands from history.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>!!</code></p>
+    <p style="margin-bottom: 0;">Runs the previous command again.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>!ls</code></p>
+    <p style="margin-bottom: 0;">Runs the most recent command that started with ls.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>!15</code></p>
+    <p style="margin-bottom: 0;">Runs command number 15 from command history.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>course=&quot;Linux Essentials&quot;</code></p>
+    <p style="margin-bottom: 0;">Creates a shell variable named course. Do not use spaces around the equals sign.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo $course</code></p>
+    <p style="margin-bottom: 0;">Displays the value stored in the course variable.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo $HOME</code></p>
+    <p style="margin-bottom: 0;">Displays the current user&#x27;s home directory path.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo $PATH</code></p>
+    <p style="margin-bottom: 0;">Displays where the shell searches for commands.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>env</code></p>
+    <p style="margin-bottom: 0;">Displays environment variables.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>env | grep HOME</code></p>
+    <p style="margin-bottom: 0;">Searches environment variables for HOME.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>type cd</code></p>
+    <p style="margin-bottom: 0;">Shows whether cd is a shell built-in.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>type ls</code></p>
+    <p style="margin-bottom: 0;">Shows how the shell identifies the ls command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>type echo</code></p>
+    <p style="margin-bottom: 0;">Shows how the shell identifies echo.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>type -a echo</code></p>
+    <p style="margin-bottom: 0;">Shows all matches for echo, including built-ins and external commands.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>which ls</code></p>
+    <p style="margin-bottom: 0;">Shows the path to the ls executable.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>which bash</code></p>
+    <p style="margin-bottom: 0;">Shows the path to bash.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>which python3</code></p>
+    <p style="margin-bottom: 0;">Shows the path to python3 if installed.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>alias</code></p>
+    <p style="margin-bottom: 0;">Displays aliases in the current shell session.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>alias ll=&#x27;ls -alF&#x27;</code></p>
+    <p style="margin-bottom: 0;">Creates a temporary alias named ll.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ll</code></p>
+    <p style="margin-bottom: 0;">Runs the command assigned to the ll alias.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>type ll</code></p>
+    <p style="margin-bottom: 0;">Verifies whether ll is an alias.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>unalias ll</code></p>
+    <p style="margin-bottom: 0;">Removes the ll alias from the current shell session.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>nano ~/.bashrc</code></p>
+    <p style="margin-bottom: 0;">Opens the bash configuration file where permanent aliases can be added.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>source ~/.bashrc</code></p>
+    <p style="margin-bottom: 0;">Reloads the bash configuration file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &quot;My home directory is $HOME&quot;</code></p>
+    <p style="margin-bottom: 0;">Double quotes allow variable expansion.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &#x27;My home directory is $HOME&#x27;</code></p>
+    <p style="margin-bottom: 0;">Single quotes print text exactly as typed.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &quot;The cost is \$100&quot;</code></p>
+    <p style="margin-bottom: 0;">Backslash prevents the dollar sign from being treated as a variable.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &quot;Today is $(date)&quot;</code></p>
+    <p style="margin-bottom: 0;">Runs the date command inside another command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>pwd; ls; date</code></p>
+    <p style="margin-bottom: 0;">Runs commands one after another.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /etc &amp;&amp; echo &quot;The /etc directory exists.&quot;</code></p>
+    <p style="margin-bottom: 0;">Runs the second command only if the first succeeds.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /notreal || echo &quot;That directory does not exist.&quot;</code></p>
+    <p style="margin-bottom: 0;">Runs the second command only if the first fails.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 6: Getting Help in Linux</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man ls</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for the ls command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man pwd</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for pwd.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man cp</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for copying files and directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man mv</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for moving or renaming files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man mkdir</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for creating directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man cat</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for displaying file contents.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man passwd</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for passwd.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man chmod</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for changing permissions.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>man grep</code></p>
+    <p style="margin-bottom: 0;">Opens the manual page for searching text patterns.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>q</code></p>
+    <p style="margin-bottom: 0;">Quits man or info pages.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>/keyword</code></p>
+    <p style="margin-bottom: 0;">Searches inside a man page for a keyword.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>n</code></p>
+    <p style="margin-bottom: 0;">Moves to the next search result inside a man page.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>N</code></p>
+    <p style="margin-bottom: 0;">Moves to the previous search result inside a man page.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>Spacebar</code></p>
+    <p style="margin-bottom: 0;">Moves down one page inside a man page.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>b</code></p>
+    <p style="margin-bottom: 0;">Moves back one page inside a man page.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help and options for the ls command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cp --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for copying files and directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mv --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for moving or renaming files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mkdir --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for creating directories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>rm --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for removing files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ps --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for process status options.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>touch --help</code></p>
+    <p style="margin-bottom: 0;">Shows quick help for creating or updating files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>info ls</code></p>
+    <p style="margin-bottom: 0;">Opens guide-style documentation for ls.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>info coreutils</code></p>
+    <p style="margin-bottom: 0;">Opens documentation for GNU core utilities.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>info mkdir</code></p>
+    <p style="margin-bottom: 0;">Opens guide-style documentation for mkdir.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis ls</code></p>
+    <p style="margin-bottom: 0;">Finds the command path and related manual page locations.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis pwd</code></p>
+    <p style="margin-bottom: 0;">Finds locations for pwd and related documentation.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis cp</code></p>
+    <p style="margin-bottom: 0;">Finds locations for cp and related documentation.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis mkdir</code></p>
+    <p style="margin-bottom: 0;">Finds locations for mkdir and related documentation.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis bash</code></p>
+    <p style="margin-bottom: 0;">Shows where bash and its documentation are stored.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>whereis passwd</code></p>
+    <p style="margin-bottom: 0;">Shows locations for passwd and related documentation.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate passwd</code></p>
+    <p style="margin-bottom: 0;">Searches the locate database for paths containing passwd.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate bash</code></p>
+    <p style="margin-bottom: 0;">Searches the locate database for paths containing bash.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate hosts</code></p>
+    <p style="margin-bottom: 0;">Searches the locate database for paths containing hosts.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate resolv.conf</code></p>
+    <p style="margin-bottom: 0;">Searches for paths containing resolv.conf.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate -c bash</code></p>
+    <p style="margin-bottom: 0;">Counts matching locate results for bash.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate -b &quot;\passwd&quot;</code></p>
+    <p style="margin-bottom: 0;">Searches for files where the base filename is passwd.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>locate -b &quot;\hosts&quot;</code></p>
+    <p style="margin-bottom: 0;">Searches for files where the base filename is hosts.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo apt install plocate</code></p>
+    <p style="margin-bottom: 0;">Installs the locate command package on many modern Debian-based systems.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo updatedb</code></p>
+    <p style="margin-bottom: 0;">Updates the locate database.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Module 7: Navigating the Linux Filesystem</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>/</code></p>
+    <p style="margin-bottom: 0;">The root directory; the top of the Linux filesystem.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>~</code></p>
+    <p style="margin-bottom: 0;">Shortcut for the current user&#x27;s home directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>.</code></p>
+    <p style="margin-bottom: 0;">Represents the current directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>..</code></p>
+    <p style="margin-bottom: 0;">Represents the parent directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>pwd</code></p>
+    <p style="margin-bottom: 0;">Prints the current working directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd</code></p>
+    <p style="margin-bottom: 0;">Returns to the current user&#x27;s home directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd ~</code></p>
+    <p style="margin-bottom: 0;">Moves to the current user&#x27;s home directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd /</code></p>
+    <p style="margin-bottom: 0;">Moves to the root directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd ..</code></p>
+    <p style="margin-bottom: 0;">Moves up one directory level.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd Documents</code></p>
+    <p style="margin-bottom: 0;">Moves into Documents using a relative path.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd Downloads</code></p>
+    <p style="margin-bottom: 0;">Moves into Downloads using a relative path.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd /home/$USER/Documents</code></p>
+    <p style="margin-bottom: 0;">Moves into Documents using an absolute path.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd ./Downloads</code></p>
+    <p style="margin-bottom: 0;">Moves into Downloads using a path from the current directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cd ../Pictures</code></p>
+    <p style="margin-bottom: 0;">Moves up one level, then into Pictures.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /</code></p>
+    <p style="margin-bottom: 0;">Lists the root directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls ~</code></p>
+    <p style="margin-bottom: 0;">Lists the current user&#x27;s home directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /home</code></p>
+    <p style="margin-bottom: 0;">Lists user home folders.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls /var/log</code></p>
+    <p style="margin-bottom: 0;">Lists system log directory contents.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -a</code></p>
+    <p style="margin-bottom: 0;">Shows all files, including hidden files.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -l</code></p>
+    <p style="margin-bottom: 0;">Shows long listing details such as permissions, owner, size, and timestamp.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lh</code></p>
+    <p style="margin-bottom: 0;">Shows long listing details with human-readable file sizes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -ld</code></p>
+    <p style="margin-bottom: 0;">Shows information about the directory itself, not its contents.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -R</code></p>
+    <p style="margin-bottom: 0;">Lists files recursively through subdirectories.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -t</code></p>
+    <p style="margin-bottom: 0;">Sorts files by modification time.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -S</code></p>
+    <p style="margin-bottom: 0;">Sorts files by size.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -r</code></p>
+    <p style="margin-bottom: 0;">Reverses listing order.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -la</code></p>
+    <p style="margin-bottom: 0;">Shows hidden files in long format.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lS</code></p>
+    <p style="margin-bottom: 0;">Shows long format sorted by size.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lSh</code></p>
+    <p style="margin-bottom: 0;">Shows long format sorted by size with human-readable sizes.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -lt</code></p>
+    <p style="margin-bottom: 0;">Shows long format sorted by modification time.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -ltr</code></p>
+    <p style="margin-bottom: 0;">Shows long format sorted by time in reverse order.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mkdir LinuxPractice</code></p>
+    <p style="margin-bottom: 0;">Creates a directory named LinuxPractice.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mkdir -p LinuxPractice/Module7/Notes</code></p>
+    <p style="margin-bottom: 0;">Creates a full directory path, including parent directories if needed.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mkdir -p LinuxPractice/Module7/Screenshots</code></p>
+    <p style="margin-bottom: 0;">Creates a screenshots folder path inside the Module7 directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -ld ~</code></p>
+    <p style="margin-bottom: 0;">Shows details about the home directory itself.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls -l /dev | head</code></p>
+    <p style="margin-bottom: 0;">Shows the first few long-listing entries in /dev.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>d</code></p>
+    <p style="margin-bottom: 0;">In ls -l output, indicates a directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>-</code></p>
+    <p style="margin-bottom: 0;">In ls -l output, indicates a regular file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>l</code></p>
+    <p style="margin-bottom: 0;">In ls -l output, indicates a symbolic link.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>b or c</code></p>
+    <p style="margin-bottom: 0;">In ls -l output, indicates a device file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo apt install tree</code></p>
+    <p style="margin-bottom: 0;">Installs the tree command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>tree /home</code></p>
+    <p style="margin-bottom: 0;">Displays the /home directory in a tree-style layout.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>tree -L 2 /</code></p>
+    <p style="margin-bottom: 0;">Displays the root directory as a tree limited to two levels.</p>
+</div>
+</div>
+
+<h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Cumulative File, Permission, and Redirection Commands</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>script cli_M1-7_lastname.txt</code></p>
+    <p style="margin-bottom: 0;">Starts recording the terminal session into a script file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>EXIT</code></p>
+    <p style="margin-bottom: 0;">Stops the script session when used after script is running.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>touch file1.txt</code></p>
+    <p style="margin-bottom: 0;">Creates an empty file or updates its timestamp.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &quot;hello&quot; &gt; file2.txt</code></p>
+    <p style="margin-bottom: 0;">Writes text to a file, replacing existing contents.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>printf &quot;test\nline2\n&quot; &gt; file3.txt</code></p>
+    <p style="margin-bottom: 0;">Creates a file with formatted text and line breaks.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>nano file5.txt</code></p>
+    <p style="margin-bottom: 0;">Opens or creates file5.txt in the nano text editor.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat file3.txt</code></p>
+    <p style="margin-bottom: 0;">Displays the full contents of a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>head -n 1 file3.txt</code></p>
+    <p style="margin-bottom: 0;">Shows the first line of a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>tail -n 1 file3.txt</code></p>
+    <p style="margin-bottom: 0;">Shows the last line of a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>wc file3.txt</code></p>
+    <p style="margin-bottom: 0;">Counts lines, words, and characters in a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>mkdir backup</code></p>
+    <p style="margin-bottom: 0;">Creates a directory named backup.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cp file1.txt file4.txt</code></p>
+    <p style="margin-bottom: 0;">Copies one file to another file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cp *.txt backup/</code></p>
+    <p style="margin-bottom: 0;">Copies all .txt files into the backup directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls backup/</code></p>
+    <p style="margin-bottom: 0;">Lists the contents of the backup directory.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>chmod 600 file1.txt</code></p>
+    <p style="margin-bottom: 0;">Allows only the owner to read and write the file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>chmod u+x file2.txt</code></p>
+    <p style="margin-bottom: 0;">Adds execute permission for the owner.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>chmod g-w file3.txt</code></p>
+    <p style="margin-bottom: 0;">Removes write permission from the group.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>sudo chown $USER:$USER file4.txt</code></p>
+    <p style="margin-bottom: 0;">Changes the file owner and group to the current user.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo -e &quot;line1\nline2\nline3&quot; &gt; data.txt</code></p>
+    <p style="margin-bottom: 0;">Creates data.txt with multiple lines of text.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>echo &quot;line4&quot; &gt;&gt; data.txt</code></p>
+    <p style="margin-bottom: 0;">Appends line4 to the end of data.txt.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>wc -l data.txt</code></p>
+    <p style="margin-bottom: 0;">Counts the number of lines in data.txt.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>grep &quot;line&quot; data.txt</code></p>
+    <p style="margin-bottom: 0;">Searches data.txt for lines containing line.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat data.txt | sort | uniq</code></p>
+    <p style="margin-bottom: 0;">Displays, sorts, and removes duplicate lines.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>ls nofile.txt &gt; output.txt 2&gt; error.txt</code></p>
+    <p style="margin-bottom: 0;">Sends normal output to one file and error messages to another file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>&gt;</code></p>
+    <p style="margin-bottom: 0;">Redirects output to a file and overwrites the file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>&gt;&gt;</code></p>
+    <p style="margin-bottom: 0;">Appends output to the end of a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>2&gt;</code></p>
+    <p style="margin-bottom: 0;">Redirects error messages to a file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>|</code></p>
+    <p style="margin-bottom: 0;">Sends the output of one command into another command.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>date &gt; module1-7_practice_log.txt</code></p>
+    <p style="margin-bottom: 0;">Writes the current date into a practice log file.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #d1d5db; border-top: 6px solid #c69214; border-radius: 10px; padding: 14px; background-color: #ffffff;">
+    <p style="margin-top: 0;"><code>cat /etc/machine-id &gt;&gt; module1-7_practice_log.txt</code></p>
+    <p style="margin-bottom: 0;">Appends the machine ID to the practice log file.</p>
+</div>
+</div>
+
+            <h3 style="background-color: #0a2240; color: #ffffff; padding: 12px 16px; border-radius: 8px; margin-top: 28px;">Cumulative Quick Review Commands</h3>
+            <div style="background-color: #111827; color: #ffffff; padding: 16px; border-radius: 8px; font-family: Consolas, Monaco, monospace; white-space: pre-wrap; margin-bottom: 24px;">whoami
+pwd
+ls
+ls -lah
+hostname
+date
+cat /etc/os-release
+uname -r
+cat /etc/machine-id
+ip addr
+ip -br a
+df -h
+free -h
+nano notes.txt
+sudo apt update
+apt list --installed | head
+sudo ufw status
+mkdir -p LinuxPractice/Module7/Notes
+touch review.txt
+echo &quot;Linux Midterm Review&quot; &gt; review.txt
+cat review.txt
+cp review.txt backup.txt
+ls -l
+chmod 600 review.txt
+man ls
+ls --help
+whereis bash
+locate -b &quot;\passwd&quot;
+echo $HOME
+echo $PATH
+history | tail -n 10</div>
+
+            <div style="background-color: #0a2240; color: #ffffff; padding: 18px; border-radius: 8px;">
+                <h3 style="margin-top: 0; color: #ffd166;">Midterm Reminder</h3>
+                <p style="margin-bottom: 0;">Focus on recognizing commands, reading command output, understanding options, and knowing which command fits each situation.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
